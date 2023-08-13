@@ -1,0 +1,21 @@
+theme = "base16_transparent"
+[editor]
+true-color = true
+mouse = false
+idle-timeout = 500
+completion-trigger-len = 1
+completion-replace = false
+auto-info = true
+text-width = 120
+bufferline = "always"
+
+[keys.normal]
+C-r = ":lsp-restart"
+[keys.normal.g]
+q = [":bc",":lsp-restart"] #fixes the completion
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+
